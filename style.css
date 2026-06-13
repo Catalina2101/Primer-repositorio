@@ -1,0 +1,104 @@
+/* Reset básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #f8fafc);
+    min-height: 100vh;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Título */
+h1{
+    margin-bottom: 30px;
+    color: #1e3a8a;
+    font-size: 2rem;
+}
+
+/* Contenedor general */
+body > *{
+    margin: 10px;
+}
+
+/* Botones */
+button{
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/* Hover botones */
+button:hover{
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+}
+
+/* Mensaje oculto */
+#texto{
+    width: 250px;
+    margin: 20px auto;
+    background-color: #dcfce7;
+    border: 1px solid #16a34a;
+    padding: 15px;
+    border-radius: 8px;
+    color: #166534;
+    font-weight: bold;
+}
+
+/* Tooltip */
+#tooltip{
+    width: 250px;
+    margin: 20px auto;
+    background-color: #fef3c7;
+    border: 1px solid #d97706;
+    padding: 15px;
+    border-radius: 8px;
+    color: #92400e;
+}
+
+/* Sección radio buttons */
+div{
+    margin: 12px auto;
+}
+
+/* Radio buttons */
+input[type="radio"]{
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+/* Checkbox */
+input[type="checkbox"]{
+    margin-top: 10px;
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+/* Labels */
+label{
+    font-size: 16px;
+    color: #334155;
+}
+
+/* Pequeño efecto responsive */
+@media(max-width:600px){
+    button{
+        width: 90%;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+}

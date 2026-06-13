@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositorio</title>
+    
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <h1>Mostrar mensajes al usuario</h1>
+    <button onclick="mostrarConfirmacion()"> Mostrar confirmacion</button> <!--YA VIENE INCLUIDO EL CLICK-->
+    <button onclick="solicitarDatos()">Solictar datos</button>
+    <button onclick="mostrarAlerta()">Mostrar Alerta</button>
+    <button onclick="mostrarVentana()">Mostrar ventana emergente</button>
+    
+    
+    
+    <button onclick="MostrarMensajeTooltip()">Mostrar Tooltip</button>
+    <button onclick="mostrarMensajeTemporizado()">Mostrar Temporizado</button>
+    <button ondblclick="mostrarDobleClick()">Mostrar doble click </button>
+    
+    <div id="texto" style="display: none;">Mensaje de texto </div>
+    <div id="tooltip" style="border: 1px solid black; padding: 10px;">Mensaje tooltip</div>
+
+    <!--BOTONES DE RADIO-->
+    <div>
+        <input type="radio" id="opcion1" name="opcion" value="opcion1" onchange="manejarBotonRadio()">
+        <label for="opcion1">Opcion 1</label>
+    </div>
+    <div>
+        <input type="radio" id="opcion2" name="opcion" value="opcion2" onchange="manejarBotonRadio()">
+        <label for="opcion2">Opcion 2</label>
+    </div>
+
+    <!-- CASILLAS DE VERIFICACION -->
+    <input type="checkbox" id="casilla1" name="casilla1" value="valor1" onchange="manejarCasillaVerificacion()">
+    <label for="casilla1"> Casilla 1</label><br>
+    <input type="checkbox" id="casilla2" name="casilla2" value="valor2" onchange="manejaCasillaVerificacion()">
+    <label for="casilla2">Casilla 2</label>
+
+
+    <script src="app.js"> </script>
+
+</body>
+</html>
