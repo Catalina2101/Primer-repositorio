@@ -28,8 +28,8 @@ function solicitarDatos() {
 }
 
 //MUESTRA UNA ALERTA
-function mostrarAlerta() {
-    alert('Soy una alerta bellaka');
+function mostrarAlerta(){
+    alert("Bienvenido al repositorio de prueba");
 }
 
 //ABRIR VENTANA EMERGENTE
